@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 interface GameCanvasProps {
     multiplier: number;
     status: 'waiting' | 'in-progress' | 'crashed';
+    nextRoundIn: number;
 }
 
 const ParticleSystem: React.FC<{ multiplier: number; status: string }> = ({ multiplier, status }) => {
@@ -66,7 +67,7 @@ const JetHero: React.FC<{ color?: string }> = ({ color = "#256af4" }) => (
     </svg>
 );
 
-export const GameCanvas = React.memo<GameCanvasProps>(({ multiplier, status }) => {
+export const GameCanvas = React.memo<GameCanvasProps>(({ multiplier, status, nextRoundIn }) => {
     const [shake, setShake] = useState(0);
 
     useEffect(() => {
@@ -113,6 +114,35 @@ export const GameCanvas = React.memo<GameCanvasProps>(({ multiplier, status }) =
 
             {/* Center Multiplier Display */}
             <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none z-10">
+                {status === 'waiting' && nextRoundIn > 0 && (
+                    <motion.div
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        className="flex flex-col items-center gap-4 mb-8"
+                    >
+                        <div className="bg-[#1a2333]/80 border border-white/10 text-white px-6 py-3 rounded-2xl backdrop-blur-xl shadow-2xl flex items-center gap-6 border-b-primary/50">
+                            <div className="flex flex-col items-start leading-none">
+                                <span className="text-[8px] font-black uppercase tracking-[0.2em] text-primary/70 mb-1.5">Flight Status</span>
+                                <span className="text-[12px] font-black uppercase tracking-widest text-slate-300">Preparing</span>
+                            </div>
+                            <div className="h-10 w-[1px] bg-white/10" />
+                            <div className="flex flex-col items-end leading-none">
+                                <span className="text-[8px] font-black uppercase tracking-[0.2em] text-slate-500 mb-1.5">Launch In</span>
+                                <span className="text-2xl sm:text-4xl font-black italic tracking-tighter text-primary">
+                                    {(nextRoundIn / 1000).toFixed(1)}s
+                                </span>
+                            </div>
+                        </div>
+                        <div className="w-48 sm:w-64 h-1.5 bg-white/5 rounded-full overflow-hidden border border-white/5 relative">
+                            <motion.div
+                                initial={{ width: "100%" }}
+                                animate={{ width: `${(nextRoundIn / 10000) * 100}%` }}
+                                transition={{ duration: 0.1, ease: "linear" }}
+                                className="h-full bg-primary shadow-[0_0_15px_rgba(37,106,244,0.8)]"
+                            />
+                        </div>
+                    </motion.div>
+                )}
                 <AnimatePresence mode="wait">
                     <motion.div
                         key={status === 'crashed' ? 'crashed' : 'active'}

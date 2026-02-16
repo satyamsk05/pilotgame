@@ -300,32 +300,7 @@ const App: React.FC = () => {
         <div className="lg:col-span-7 xl:col-span-8 flex flex-col gap-10 order-1 lg:order-2">
           {/* Game Canvas */}
           <div className="relative">
-            {status === 'waiting' && nextRoundIn > 0 && (
-              <div className="absolute top-20 sm:top-32 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-3">
-                <div className="bg-[#1a2333]/90 border border-white/10 text-white px-5 py-2 rounded-2xl backdrop-blur-xl shadow-2xl flex items-center gap-5 border-b-primary/50">
-                  <div className="flex flex-col items-start leading-none">
-                    <span className="text-[7px] font-black uppercase tracking-[0.2em] text-primary/70 mb-1">Flight Status</span>
-                    <span className="text-[10px] font-black uppercase tracking-widest text-slate-300">Preparing</span>
-                  </div>
-                  <div className="h-8 w-[1px] bg-white/10" />
-                  <div className="flex flex-col items-end leading-none">
-                    <span className="text-[7px] font-black uppercase tracking-[0.2em] text-slate-500 mb-1">Launch In</span>
-                    <span className="text-xl sm:text-2xl font-black italic tracking-tighter text-primary">
-                      {(nextRoundIn / 1000).toFixed(1)}s
-                    </span>
-                  </div>
-                </div>
-                <div className="w-40 sm:w-56 h-[3px] bg-white/5 rounded-full overflow-hidden border border-white/5">
-                  <motion.div
-                    initial={{ width: "100%" }}
-                    animate={{ width: `${(nextRoundIn / 10000) * 100}%` }}
-                    transition={{ duration: 0.1, ease: "linear" }}
-                    className="h-full bg-primary shadow-[0_0_15px_rgba(37,106,244,0.8)]"
-                  />
-                </div>
-              </div>
-            )}
-            <GameCanvas multiplier={multiplier} status={status} />
+            <GameCanvas multiplier={multiplier} status={status} nextRoundIn={nextRoundIn} />
 
             {/* Compact Fleet History Bar */}
             <div className="absolute bottom-6 left-0 right-0 z-20 px-6 sm:px-12 flex items-center justify-center pointer-events-none">

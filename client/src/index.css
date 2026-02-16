@@ -8,25 +8,40 @@
   }
 }
 
-.glass-panel {
-  background: rgba(40, 46, 57, 0.6);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+@layer utilities {
+  .perf-gpu {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    will-change: transform;
+  }
+}
+
+/* Optimize backdrop-filter performance on Mobile */
+@media (max-width: 768px) {
+  .glass-panel {
+    backdrop-filter: blur(4px);
+    /* Reduced blur for performance */
+    background: rgba(20, 26, 38, 0.9);
+  }
 }
 
 .multiplier-text {
   text-shadow: 0 0 20px rgba(37, 106, 244, 0.5);
+  will-change: contents;
 }
 
 .grid-bg {
   background-image: linear-gradient(rgba(37, 106, 244, 0.05) 1px, transparent 1px),
-                    linear-gradient(90deg, rgba(37, 106, 244, 0.05) 1px, transparent 1px);
+    linear-gradient(90deg, rgba(37, 106, 244, 0.05) 1px, transparent 1px);
   background-size: 40px 40px;
+  pointer-events: none;
 }
 
 .custom-scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+
 .custom-scrollbar-hide {
   -ms-overflow-style: none;
   scrollbar-width: none;

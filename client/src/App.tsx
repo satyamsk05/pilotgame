@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { useGameSocket } from './hooks/useGameSocket';
 import { GameCanvas } from './components/GameCanvas';
 import { LiveBets } from './components/LiveBets';
@@ -226,83 +226,85 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-[#101622] text-white font-display overflow-x-hidden" style={{ zoom: 0.9 }}>
       {/* Top Navigation */}
-      <header className="flex items-center justify-between border-b border-primary/20 bg-[#101622]/80 px-6 py-4 sticky top-0 z-50 backdrop-blur-md">
-        <div className="flex items-center gap-4">
-          <div className="text-primary hover:rotate-12 transition-transform cursor-pointer">
-            <span className="material-symbols-outlined text-4xl">rocket_launch</span>
-          </div>
-          <div className="flex flex-col">
-            <h2 className="text-xl font-black tracking-tighter uppercase leading-none">Pilot</h2>
-            <span className="text-[10px] font-black text-primary tracking-[0.3em] uppercase opacity-60">Control Center</span>
-          </div>
-        </div>
-
-        <div className="flex items-center gap-6">
-          {isConnected && (
-            <div className="flex items-center gap-2 sm:gap-4 px-3 sm:px-4 py-1.5 sm:py-2 rounded-2xl bg-white/5 border border-white/5 shadow-inner">
-              <div className="flex flex-col items-start px-1 sm:px-2 border-r border-white/10">
-                <span className="hidden xs:block text-[8px] font-black text-slate-500 uppercase">Game Balance</span>
-                <span className={`text-[10px] sm:text-xs font-black ${parseFloat(gameBalance) > 0 ? 'text-primary' : 'text-slate-400'}`}>
-                  ${(parseFloat(gameBalance) * ethPrice).toFixed(2)}
-                  <span className="hidden xs:inline ml-1.5 opacity-40 text-[9px] font-bold tracking-widest">{parseFloat(gameBalance).toFixed(4)} Ξ</span>
-                </span>
-              </div>
-              <button
-                onClick={() => setIsDepositModalOpen(true)}
-                className="size-7 sm:size-8 flex items-center justify-center rounded-lg bg-primary/10 border border-primary/20 text-primary hover:bg-primary/20 transition-all"
-                title="Manage Game Balance"
-              >
-                <span className="material-symbols-outlined text-sm">account_balance_wallet</span>
-              </button>
+      {useMemo(() => (
+        <header className="flex items-center justify-between border-b border-primary/20 bg-[#101622]/80 px-6 py-4 sticky top-0 z-50 backdrop-blur-md">
+          <div className="flex items-center gap-4">
+            <div className="text-primary hover:rotate-12 transition-transform cursor-pointer">
+              <span className="material-symbols-outlined text-4xl">rocket_launch</span>
             </div>
-          )}
+            <div className="flex flex-col">
+              <h2 className="text-xl font-black tracking-tighter uppercase leading-none">Pilot</h2>
+              <span className="text-[10px] font-black text-primary tracking-[0.3em] uppercase opacity-60">Control Center</span>
+            </div>
+          </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-6">
             {isConnected && (
-              <div className={`flex items-center gap-2 px-3 py-2 rounded-2xl border ${isWrongChain ? 'bg-red-500/10 border-red-500/30 text-red-500' : 'bg-emerald-500/10 border-emerald-500/30 text-emerald-500'}`}>
-                <span className="relative flex h-2 w-2">
-                  <span className={`animate-ping absolute inline-flex h-full w-full rounded-full opacity-75 ${isWrongChain ? 'bg-red-500' : 'bg-emerald-500'}`}></span>
-                  <span className={`relative inline-flex rounded-full h-2 w-2 ${isWrongChain ? 'bg-red-500' : 'bg-emerald-500'}`}></span>
-                </span>
-                <span className="text-[10px] font-black uppercase tracking-widest leading-none">
-                  {isWrongChain ? 'Wrong Network' : 'Base Sepolia'}
-                </span>
-              </div>
-            )}
-            <button
-              onClick={() => setIsMuted(!isMuted)}
-              className="size-12 flex items-center justify-center rounded-2xl bg-white/5 border border-white/5 hover:bg-white/10 transition-all text-slate-400"
-              title={isMuted ? "Unmute" : "Mute"}
-            >
-              <span className="material-symbols-outlined hover:scale-110 transition-transform">
-                {isMuted ? 'volume_off' : 'volume_up'}
-              </span>
-            </button>
-            {!isConnected ? (
-              <button
-                onClick={() => connect({ connector: connectors[0] })}
-                className="flex items-center gap-3 rounded-[1.2rem] h-12 px-8 bg-primary text-white font-black uppercase text-xs tracking-widest hover:bg-primary/90 transition-all shadow-[0_0_30px_rgba(37,106,244,0.4)] group"
-              >
-                <span className="material-symbols-outlined text-xl group-hover:scale-110 transition-transform">account_balance_wallet</span>
-                Connect Wallet
-              </button>
-            ) : (
-              <div className="flex items-center gap-2 sm:gap-4">
-                <div className="flex flex-col items-end">
-                  <span className="hidden sm:block text-[10px] uppercase text-slate-500 font-bold tracking-widest">Active Pilot</span>
-                  <span className="text-[10px] sm:text-xs font-black text-primary">{address?.slice(0, 4)}...{address?.slice(-2)}</span>
+              <div className="flex items-center gap-2 sm:gap-4 px-3 sm:px-4 py-1.5 sm:py-2 rounded-2xl bg-white/5 border border-white/10 shadow-inner">
+                <div className="flex flex-col items-start px-1 sm:px-2 border-r border-white/10">
+                  <span className="hidden xs:block text-[8px] font-black text-slate-500 uppercase">Game Balance</span>
+                  <span className={`text-[10px] sm:text-xs font-black ${parseFloat(gameBalance) > 0 ? 'text-primary' : 'text-slate-400'}`}>
+                    ${(parseFloat(gameBalance) * ethPrice).toFixed(2)}
+                    <span className="hidden xs:inline ml-1.5 opacity-40 text-[9px] font-bold tracking-widest">{parseFloat(gameBalance).toFixed(4)} Ξ</span>
+                  </span>
                 </div>
                 <button
-                  onClick={() => disconnect()}
-                  className="size-12 flex items-center justify-center rounded-2xl bg-slate-900 border border-white/5 hover:bg-red-500/10 hover:border-red-500/20 hover:text-red-500 transition-all shadow-xl group"
+                  onClick={() => setIsDepositModalOpen(true)}
+                  className="size-7 sm:size-8 flex items-center justify-center rounded-lg bg-primary/10 border border-primary/20 text-primary hover:bg-primary/20 transition-all"
+                  title="Manage Game Balance"
                 >
-                  <span className="material-symbols-outlined group-hover:rotate-90 transition-transform">power_settings_new</span>
+                  <span className="material-symbols-outlined text-sm">account_balance_wallet</span>
                 </button>
               </div>
             )}
+
+            <div className="flex items-center gap-3">
+              {isConnected && (
+                <div className={`flex items-center gap-2 px-3 py-2 rounded-2xl border ${isWrongChain ? 'bg-red-500/10 border-red-500/30 text-red-500' : 'bg-emerald-500/10 border-emerald-500/30 text-emerald-500'}`}>
+                  <span className="relative flex h-2 w-2">
+                    <span className={`animate-ping absolute inline-flex h-full w-full rounded-full opacity-75 ${isWrongChain ? 'bg-red-500' : 'bg-emerald-500'}`}></span>
+                    <span className={`relative inline-flex rounded-full h-2 w-2 ${isWrongChain ? 'bg-red-500' : 'bg-emerald-500'}`}></span>
+                  </span>
+                  <span className="text-[10px] font-black uppercase tracking-widest leading-none">
+                    {isWrongChain ? 'Wrong Network' : 'Base Sepolia'}
+                  </span>
+                </div>
+              )}
+              <button
+                onClick={() => setIsMuted(!isMuted)}
+                className="size-12 flex items-center justify-center rounded-2xl bg-white/5 border border-white/5 hover:bg-white/10 transition-all text-slate-400"
+                title={isMuted ? "Unmute" : "Mute"}
+              >
+                <span className="material-symbols-outlined hover:scale-110 transition-transform">
+                  {isMuted ? 'volume_off' : 'volume_up'}
+                </span>
+              </button>
+              {!isConnected ? (
+                <button
+                  onClick={() => connect({ connector: connectors[0] })}
+                  className="flex items-center gap-3 rounded-[1.2rem] h-12 px-8 bg-primary text-white font-black uppercase text-xs tracking-widest hover:bg-primary/90 transition-all shadow-[0_0_30px_rgba(37,106,244,0.4)] group"
+                >
+                  <span className="material-symbols-outlined text-xl group-hover:scale-110 transition-transform">account_balance_wallet</span>
+                  Connect Wallet
+                </button>
+              ) : (
+                <div className="flex items-center gap-2 sm:gap-4">
+                  <div className="flex flex-col items-end">
+                    <span className="hidden sm:block text-[10px] uppercase text-slate-500 font-bold tracking-widest">Active Pilot</span>
+                    <span className="text-[10px] sm:text-xs font-black text-primary">{address?.slice(0, 4)}...{address?.slice(-2)}</span>
+                  </div>
+                  <button
+                    onClick={() => disconnect()}
+                    className="size-12 flex items-center justify-center rounded-2xl bg-slate-900 border border-white/5 hover:bg-red-500/10 hover:border-red-500/20 hover:text-red-500 transition-all shadow-xl group"
+                  >
+                    <span className="material-symbols-outlined group-hover:rotate-90 transition-transform">power_settings_new</span>
+                  </button>
+                </div>
+              )}
+            </div>
           </div>
-        </div>
-      </header>
+        </header>
+      ), [isConnected, gameBalance, ethPrice, isWrongChain, isMuted, address, isDepositModalOpen])}
 
       <main className="max-w-[1700px] mx-auto p-4 lg:p-8 grid grid-cols-1 lg:grid-cols-12 gap-10">
         {/* Center Game Area - First on mobile, second on desktop */}
@@ -474,66 +476,68 @@ const App: React.FC = () => {
         </div>
 
         {/* Stats Sidebar - Second on mobile, first on desktop */}
-        <aside className="lg:col-span-5 xl:col-span-4 flex flex-col order-2 lg:order-1 lg:h-[calc(100vh-160px)] gap-10 sticky lg:top-32">
-          {/* Live Bets Panel */}
-          <div className="h-[400px] shrink-0">
-            <LiveBets bets={liveBets} ethPrice={ethPrice} status={status} />
-          </div>
+        {useMemo(() => (
+          <aside className="lg:col-span-5 xl:col-span-4 flex flex-col order-2 lg:order-1 lg:h-[calc(100vh-160px)] gap-10 sticky lg:top-32">
+            {/* Live Bets Panel */}
+            <div className="h-[400px] shrink-0">
+              <LiveBets bets={liveBets} ethPrice={ethPrice} status={status} />
+            </div>
 
-          {/* Personal Missions Panel */}
-          <div className="glass-panel rounded-[2.5rem] p-8 flex flex-col flex-1 min-h-[500px] overflow-hidden border border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.4)]">
-            <div className="flex items-center justify-between mb-8 pb-4 border-b border-white/10">
-              <div className="flex flex-col gap-1">
-                <div className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-emerald-400 text-xl">person</span>
-                  <h3 className="text-[11px] font-black text-white uppercase tracking-[0.3em]">Personal Missions</h3>
+            {/* Personal Missions Panel */}
+            <div className="glass-panel rounded-[2.5rem] p-8 flex flex-col flex-1 min-h-[500px] overflow-hidden border border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.4)]">
+              <div className="flex items-center justify-between mb-8 pb-4 border-b border-white/10">
+                <div className="flex flex-col gap-1">
+                  <div className="flex items-center gap-2">
+                    <span className="material-symbols-outlined text-emerald-400 text-xl">person</span>
+                    <h3 className="text-[11px] font-black text-white uppercase tracking-[0.3em]">Personal Missions</h3>
+                  </div>
+                  <p className="text-[9px] text-slate-500 font-bold uppercase tracking-widest">Your track record</p>
                 </div>
-                <p className="text-[9px] text-slate-500 font-bold uppercase tracking-widest">Your track record</p>
+              </div>
+
+              <div className="flex-1 overflow-y-auto space-y-3 custom-scrollbar pr-4 -mr-4">
+                {betHistory.length > 0 ? betHistory.map((bet, i) => (
+                  <motion.div
+                    initial={{ x: -20, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    key={bet.id || i}
+                    className={`flex items-center justify-between p-4 rounded-2xl border transition-all cursor-default shadow-sm ${bet.result === 'win'
+                      ? 'bg-emerald-500/5 border-emerald-500/10 hover:border-emerald-500/30'
+                      : 'bg-rose-500/5 border-rose-500/10 hover:border-rose-500/30'
+                      }`}
+                  >
+                    <div className="flex items-center gap-4">
+                      <div className={`p-1.5 rounded-lg ${bet.result === 'win' ? 'bg-emerald-500/20 text-emerald-500' : 'bg-rose-500/20 text-rose-500'}`}>
+                        <span className="material-symbols-outlined text-sm">
+                          {bet.result === 'win' ? 'receipt_long' : 'close_fullscreen'}
+                        </span>
+                      </div>
+                      <div className="flex flex-col">
+                        <span className="text-xs font-black text-white tracking-tight">{bet.multiplier.toFixed(2)}x</span>
+                        <span className="text-[8px] font-black text-slate-500 uppercase tracking-widest leading-none mt-0.5">
+                          Ξ{bet.amount} <span className="opacity-40 ml-1">(${(bet.amount * ethPrice).toFixed(2)})</span>
+                        </span>
+                      </div>
+                    </div>
+                    <div className="flex flex-col items-end">
+                      <span className={`text-xs font-black italic tracking-tighter ${bet.result === 'win' ? 'text-emerald-500' : 'text-rose-500'}`}>
+                        {bet.result === 'win' ? '+' : ''}{bet.profit.toFixed(4)} Ξ
+                      </span>
+                      <span className="text-[8px] font-black text-slate-600 uppercase tracking-widest mt-0.5">
+                        (${(bet.profit * ethPrice).toFixed(2)}) • {new Date(bet.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+                      </span>
+                    </div>
+                  </motion.div>
+                )) : (
+                  <div className="flex flex-col items-center justify-center h-full text-slate-500 gap-4 opacity-20 py-10">
+                    <span className="material-symbols-outlined text-5xl">inventory_2</span>
+                    <p className="text-[9px] font-black uppercase tracking-[0.3em] text-center">No mission logs found</p>
+                  </div>
+                )}
               </div>
             </div>
-
-            <div className="flex-1 overflow-y-auto space-y-3 custom-scrollbar pr-4 -mr-4">
-              {betHistory.length > 0 ? betHistory.map((bet, i) => (
-                <motion.div
-                  initial={{ x: -20, opacity: 0 }}
-                  animate={{ x: 0, opacity: 1 }}
-                  key={bet.id || i}
-                  className={`flex items-center justify-between p-4 rounded-2xl border transition-all cursor-default shadow-sm ${bet.result === 'win'
-                    ? 'bg-emerald-500/5 border-emerald-500/10 hover:border-emerald-500/30'
-                    : 'bg-rose-500/5 border-rose-500/10 hover:border-rose-500/30'
-                    }`}
-                >
-                  <div className="flex items-center gap-4">
-                    <div className={`p-1.5 rounded-lg ${bet.result === 'win' ? 'bg-emerald-500/20 text-emerald-500' : 'bg-rose-500/20 text-rose-500'}`}>
-                      <span className="material-symbols-outlined text-sm">
-                        {bet.result === 'win' ? 'receipt_long' : 'close_fullscreen'}
-                      </span>
-                    </div>
-                    <div className="flex flex-col">
-                      <span className="text-xs font-black text-white tracking-tight">{bet.multiplier.toFixed(2)}x</span>
-                      <span className="text-[8px] font-black text-slate-500 uppercase tracking-widest leading-none mt-0.5">
-                        Ξ{bet.amount} <span className="opacity-40 ml-1">(${(bet.amount * ethPrice).toFixed(2)})</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div className="flex flex-col items-end">
-                    <span className={`text-xs font-black italic tracking-tighter ${bet.result === 'win' ? 'text-emerald-500' : 'text-rose-500'}`}>
-                      {bet.result === 'win' ? '+' : ''}{bet.profit.toFixed(4)} Ξ
-                    </span>
-                    <span className="text-[8px] font-black text-slate-600 uppercase tracking-widest mt-0.5">
-                      (${(bet.profit * ethPrice).toFixed(2)}) • {new Date(bet.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
-                    </span>
-                  </div>
-                </motion.div>
-              )) : (
-                <div className="flex flex-col items-center justify-center h-full text-slate-500 gap-4 opacity-20 py-10">
-                  <span className="material-symbols-outlined text-5xl">inventory_2</span>
-                  <p className="text-[9px] font-black uppercase tracking-[0.3em] text-center">No mission logs found</p>
-                </div>
-              )}
-            </div>
-          </div>
-        </aside>
+          </aside>
+        ), [liveBets, status, ethPrice, betHistory])}
       </main>
 
       {/* Deposit/Withdraw Modal */}

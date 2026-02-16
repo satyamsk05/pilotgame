@@ -259,17 +259,6 @@ const App: React.FC = () => {
             )}
 
             <div className="flex items-center gap-3">
-              {isConnected && (
-                <div className={`flex items-center gap-2 px-3 py-2 rounded-2xl border ${isWrongChain ? 'bg-red-500/10 border-red-500/30 text-red-500' : 'bg-emerald-500/10 border-emerald-500/30 text-emerald-500'}`}>
-                  <span className="relative flex h-2 w-2">
-                    <span className={`animate-ping absolute inline-flex h-full w-full rounded-full opacity-75 ${isWrongChain ? 'bg-red-500' : 'bg-emerald-500'}`}></span>
-                    <span className={`relative inline-flex rounded-full h-2 w-2 ${isWrongChain ? 'bg-red-500' : 'bg-emerald-500'}`}></span>
-                  </span>
-                  <span className="text-[10px] font-black uppercase tracking-widest leading-none">
-                    {isWrongChain ? 'Wrong Network' : 'Base Sepolia'}
-                  </span>
-                </div>
-              )}
               <button
                 onClick={() => setIsMuted(!isMuted)}
                 className="size-12 flex items-center justify-center rounded-2xl bg-white/5 border border-white/5 hover:bg-white/10 transition-all text-slate-400"

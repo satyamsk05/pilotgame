@@ -144,6 +144,12 @@ const App: React.FC = () => {
 
   const handleDeposit = async () => {
     if (!address || !fundingAmount) return;
+
+    if (isWrongChain) {
+      switchChain({ chainId: baseSepolia.id });
+      return;
+    }
+
     try {
       const amountToDeposit = parseFloat(fundingAmount);
       if (isNaN(amountToDeposit) || amountToDeposit <= 0) {
@@ -168,6 +174,12 @@ const App: React.FC = () => {
 
   const handleWithdraw = async () => {
     if (!address || !fundingAmount) return;
+
+    if (isWrongChain) {
+      switchChain({ chainId: baseSepolia.id });
+      return;
+    }
+
     try {
       const amountToWithdraw = parseFloat(fundingAmount);
       if (isNaN(amountToWithdraw) || amountToWithdraw <= 0) {

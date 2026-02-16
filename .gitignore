@@ -1,0 +1,15 @@
+node_modules/
+.env
+dist/
+*.json
+!package.json
+!tsconfig.json
+!bet_history.json
+history.json
+balances.json
+server_state.json
+transactions.json
+.vscode/
+.gemini/
+.agent/
+brain/

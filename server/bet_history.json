@@ -1,0 +1,1802 @@
+[
+  {
+    "id": "0x52a362b6d1380ff5c811d927ae44eb81",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0358,
+    "multiplier": 1.63,
+    "profit": 0.022553999999999998,
+    "result": "win",
+    "timestamp": 1771221511644
+  },
+  {
+    "id": "0x06d608933fea4c99467164cb3b0ecafc",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0231,
+    "multiplier": 1.95,
+    "profit": -0.0231,
+    "result": "loss",
+    "timestamp": 1771221517126
+  },
+  {
+    "id": "0xdf93010fc5a5e09c44fe494dc70bb032",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0373,
+    "multiplier": 1.95,
+    "profit": -0.0373,
+    "result": "loss",
+    "timestamp": 1771221517127
+  },
+  {
+    "id": "0x0bb596c7edffa566fa7c3a26a1165c61",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0178,
+    "multiplier": 1.95,
+    "profit": -0.0178,
+    "result": "loss",
+    "timestamp": 1771221517128
+  },
+  {
+    "id": "0x2d8f3d6e333f2a93993c53bfc0678c14",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0026,
+    "multiplier": 1.5,
+    "profit": 0.0013,
+    "result": "win",
+    "timestamp": 1771221540560
+  },
+  {
+    "id": "0x128d7327513fb45da68b35f102d78940",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.033,
+    "multiplier": 1.74,
+    "profit": -0.033,
+    "result": "loss",
+    "timestamp": 1771221545848
+  },
+  {
+    "id": "0x30ecbcac68d12282d76ebcfe9d3798dd",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0447,
+    "multiplier": 1.74,
+    "profit": -0.0447,
+    "result": "loss",
+    "timestamp": 1771221545849
+  },
+  {
+    "id": "0x72cc57c25cf63c7c69f7897699859432",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0323,
+    "multiplier": 1.74,
+    "profit": -0.0323,
+    "result": "loss",
+    "timestamp": 1771221545850
+  },
+  {
+    "id": "0xa41ef4f6f204cbd78a1af3a122e60a23",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0096,
+    "multiplier": 1.87,
+    "profit": -0.0096,
+    "result": "loss",
+    "timestamp": 1771221577385
+  },
+  {
+    "id": "0x0d03aa63ef3c43229113210cc2f8d464",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0238,
+    "multiplier": 1.87,
+    "profit": -0.0238,
+    "result": "loss",
+    "timestamp": 1771221577386
+  },
+  {
+    "id": "0x9e6de8a5e51327ca2d24dfbf778e41e5",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0177,
+    "multiplier": 1.87,
+    "profit": -0.0177,
+    "result": "loss",
+    "timestamp": 1771221577387
+  },
+  {
+    "id": "0x5ffe75a7b357ceb5feb1ed03f59547a9",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0138,
+    "multiplier": 1,
+    "profit": -0.0138,
+    "result": "loss",
+    "timestamp": 1771221596298
+  },
+  {
+    "id": "0x8ec7fc3c6038c44db075245a4ff91b2b",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0148,
+    "multiplier": 1,
+    "profit": -0.0148,
+    "result": "loss",
+    "timestamp": 1771221596299
+  },
+  {
+    "id": "0xcfd53d8f451b309e32e1f95cb4fc7997",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0151,
+    "multiplier": 1,
+    "profit": -0.0151,
+    "result": "loss",
+    "timestamp": 1771221596299
+  },
+  {
+    "id": "0x8c3165f5a8eb934578fd2de05e0bbacd",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0394,
+    "multiplier": 1.28,
+    "profit": 0.011032,
+    "result": "win",
+    "timestamp": 1771221614634
+  },
+  {
+    "id": "0x8905cd83615b15b2e5ad8db9e4e4cd05",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0035,
+    "multiplier": 1.71,
+    "profit": 0.002485,
+    "result": "win",
+    "timestamp": 1771221618933
+  },
+  {
+    "id": "0x04fc96a6409e5679b1cf435be341ec83",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.026,
+    "multiplier": 1.95,
+    "profit": -0.026,
+    "result": "loss",
+    "timestamp": 1771221623992
+  },
+  {
+    "id": "0xf9e868fdd9834e872c0d80eb8c0ae0af",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0148,
+    "multiplier": 1.51,
+    "profit": 0.007547999999999999,
+    "result": "win",
+    "timestamp": 1771221649113
+  },
+  {
+    "id": "0x3b230e43b5f56143f01479faf9d5f8c3",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0097,
+    "multiplier": 1.86,
+    "profit": -0.0097,
+    "result": "loss",
+    "timestamp": 1771221656443
+  },
+  {
+    "id": "0x69ae7833f9fee60088e0b2770382da6a",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0464,
+    "multiplier": 1.86,
+    "profit": -0.0464,
+    "result": "loss",
+    "timestamp": 1771221656444
+  },
+  {
+    "id": "0x13c5eac36574881513a2b61e94ef3dca",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0334,
+    "multiplier": 1.86,
+    "profit": -0.0334,
+    "result": "loss",
+    "timestamp": 1771221656445
+  },
+  {
+    "id": "0x2d3e7b5facdbf66b1cd4f419fe23fbfc",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0193,
+    "multiplier": 1.86,
+    "profit": -0.0193,
+    "result": "loss",
+    "timestamp": 1771221656446
+  },
+  {
+    "id": "0xc6a3ffdd8bbdd995465145c49f25be23",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0283,
+    "multiplier": 1.59,
+    "profit": -0.0283,
+    "result": "loss",
+    "timestamp": 1771221681842
+  },
+  {
+    "id": "0xfa73856ef581da2b37a08e7155693edd",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0198,
+    "multiplier": 1.59,
+    "profit": -0.0198,
+    "result": "loss",
+    "timestamp": 1771221681843
+  },
+  {
+    "id": "0x9aea51dd26411e3360fef358c5e3fc66",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0274,
+    "multiplier": 1.59,
+    "profit": -0.0274,
+    "result": "loss",
+    "timestamp": 1771221681843
+  },
+  {
+    "id": "0xa690b1a1f46ab4b3442316aa739ab72c",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0254,
+    "multiplier": 1.59,
+    "profit": -0.0254,
+    "result": "loss",
+    "timestamp": 1771221681844
+  },
+  {
+    "id": "0x97eceeac8a3ae6c150f084d78b427c67",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0179,
+    "multiplier": 1.82,
+    "profit": 0.014678000000000004,
+    "result": "win",
+    "timestamp": 1771221707943
+  },
+  {
+    "id": "0x15ff31a0068eaf0f5a068b97b634a6ce",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0183,
+    "multiplier": 2.36,
+    "profit": 0.024887999999999997,
+    "result": "win",
+    "timestamp": 1771221711770
+  },
+  {
+    "id": "0xf7650c06540ad3514e6d70fdb4b6ca67",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.001,
+    "multiplier": 2.47,
+    "profit": -0.001,
+    "result": "loss",
+    "timestamp": 1771221715587
+  },
+  {
+    "id": "0x5cf0447e6bfea0eefbd2cc5cd3055f29",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0152,
+    "multiplier": 2.47,
+    "profit": -0.0152,
+    "result": "loss",
+    "timestamp": 1771221715589
+  },
+  {
+    "id": "0x75ae44b5981223e08d914b27264a98af",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0147,
+    "multiplier": 2.47,
+    "profit": -0.0147,
+    "result": "loss",
+    "timestamp": 1771221715591
+  },
+  {
+    "id": "0xe38abae320fb708f3a068d3558dd58f7",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0321,
+    "multiplier": 2.47,
+    "profit": -0.0321,
+    "result": "loss",
+    "timestamp": 1771221715592
+  },
+  {
+    "id": "0xb78920b5466ab6ca6a5f1ae8f8b0fc05",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0061,
+    "multiplier": 1.5,
+    "profit": 0.0030499999999999998,
+    "result": "win",
+    "timestamp": 1771221736388
+  },
+  {
+    "id": "0xc04a8c956d0f7ade9ba513691aa32304",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0476,
+    "multiplier": 2.82,
+    "profit": -0.0476,
+    "result": "loss",
+    "timestamp": 1771221748826
+  },
+  {
+    "id": "0x27ff2691879550ecb216c7c79c999143",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0363,
+    "multiplier": 2.82,
+    "profit": -0.0363,
+    "result": "loss",
+    "timestamp": 1771221748827
+  },
+  {
+    "id": "0x3488784bd4fb0d392d2332c8f89fbfe4",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0427,
+    "multiplier": 2.82,
+    "profit": -0.0427,
+    "result": "loss",
+    "timestamp": 1771221748829
+  },
+  {
+    "id": "0x4ac4fc7571da123f9229c06cb4e04a7a",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0501,
+    "multiplier": 2.82,
+    "profit": -0.0501,
+    "result": "loss",
+    "timestamp": 1771221748830
+  },
+  {
+    "id": "0x3337b701a212853a6282e0e9c10ffd33",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0461,
+    "multiplier": 1.22,
+    "profit": 0.010141999999999998,
+    "result": "win",
+    "timestamp": 1771221769943
+  },
+  {
+    "id": "0x83339523fdb78875f42e2b2b0acca8b3",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0383,
+    "multiplier": 1.64,
+    "profit": -0.0383,
+    "result": "loss",
+    "timestamp": 1771221777793
+  },
+  {
+    "id": "0x3fddd3352cf0a1bc58829262bece8d47",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0294,
+    "multiplier": 1.64,
+    "profit": -0.0294,
+    "result": "loss",
+    "timestamp": 1771221777795
+  },
+  {
+    "id": "0xd6ce72236a07e908288d24b9d37d3b2f",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.027,
+    "multiplier": 1.64,
+    "profit": -0.027,
+    "result": "loss",
+    "timestamp": 1771221777796
+  },
+  {
+    "id": "0x47ec6ca291eae4e5bedfbafe330a3d79",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0203,
+    "multiplier": 1.64,
+    "profit": -0.0203,
+    "result": "loss",
+    "timestamp": 1771221777797
+  },
+  {
+    "id": "0x7ba8c8a470e394a02c43d825de821e50",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0331,
+    "multiplier": 1.68,
+    "profit": 0.022507999999999993,
+    "result": "win",
+    "timestamp": 1771221803452
+  },
+  {
+    "id": "0x24d53ae032fc213f8f11bee17c857483",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0481,
+    "multiplier": 1.77,
+    "profit": 0.037036999999999994,
+    "result": "win",
+    "timestamp": 1771221804206
+  },
+  {
+    "id": "0x374d57f57e9bc8eaa0134adfbb5c58f3",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0213,
+    "multiplier": 2.18,
+    "profit": -0.0213,
+    "result": "loss",
+    "timestamp": 1771221812133
+  },
+  {
+    "id": "0x0e7a6751c42b3a176c2134060e3acef0",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0383,
+    "multiplier": 2.18,
+    "profit": -0.0383,
+    "result": "loss",
+    "timestamp": 1771221812134
+  },
+  {
+    "id": "0x16f6ee380197bacb0bedcb6d5a8b627b",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0476,
+    "multiplier": 2.18,
+    "profit": -0.0476,
+    "result": "loss",
+    "timestamp": 1771221812134
+  },
+  {
+    "id": "0xeacba6de0b196ad27f1431edfdd39a65",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0438,
+    "multiplier": 2.18,
+    "profit": -0.0438,
+    "result": "loss",
+    "timestamp": 1771221812135
+  },
+  {
+    "id": "0x5f885c13dc5d3770a90c10d6bf0e1217",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0063,
+    "multiplier": 2.18,
+    "profit": -0.0063,
+    "result": "loss",
+    "timestamp": 1771221812136
+  },
+  {
+    "id": "0xf51bb96fa2b5198b873c617a5ba6640e",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0403,
+    "multiplier": 1,
+    "profit": -0.0403,
+    "result": "loss",
+    "timestamp": 1771221832514
+  },
+  {
+    "id": "0xd2fa650f0ccc32f06a760a2d7317e296",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0355,
+    "multiplier": 1,
+    "profit": -0.0355,
+    "result": "loss",
+    "timestamp": 1771221832516
+  },
+  {
+    "id": "0x3f71259d3371d0f9b20607a9ad23974a",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0094,
+    "multiplier": 1,
+    "profit": -0.0094,
+    "result": "loss",
+    "timestamp": 1771221832518
+  },
+  {
+    "id": "0x7bdbd831acc0dc6cae02594c4b83394e",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.014,
+    "multiplier": 1,
+    "profit": -0.014,
+    "result": "loss",
+    "timestamp": 1771221832519
+  },
+  {
+    "id": "0x057c7f2349ddcfb7b9bb4e7eaf9838b3",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0436,
+    "multiplier": 1,
+    "profit": -0.0436,
+    "result": "loss",
+    "timestamp": 1771221832521
+  },
+  {
+    "id": "0x3cf29fd96c9820715235554b9d1bd944",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0224,
+    "multiplier": 1,
+    "profit": -0.0224,
+    "result": "loss",
+    "timestamp": 1771221832524
+  },
+  {
+    "id": "0x0775b725cfb522af0d5a6355b521e0c1",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0461,
+    "multiplier": 1,
+    "profit": -0.0461,
+    "result": "loss",
+    "timestamp": 1771221832526
+  },
+  {
+    "id": "0x38a08d9d57dd49f592ac7234e436f806",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0152,
+    "multiplier": 1.07,
+    "profit": -0.0152,
+    "result": "loss",
+    "timestamp": 1771221851501
+  },
+  {
+    "id": "0x253d68c6542a3d90a727a4584be0d733",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0318,
+    "multiplier": 1.07,
+    "profit": -0.0318,
+    "result": "loss",
+    "timestamp": 1771221851503
+  },
+  {
+    "id": "0x3ad9fd37f7fab682d1d3a6f6bbc1a65d",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0267,
+    "multiplier": 1.07,
+    "profit": -0.0267,
+    "result": "loss",
+    "timestamp": 1771221851504
+  },
+  {
+    "id": "0x02deb4635dd073292bf745cf9a5c972b",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0022,
+    "multiplier": 1.29,
+    "profit": 0.0006380000000000001,
+    "result": "win",
+    "timestamp": 1771221869879
+  },
+  {
+    "id": "0xfb555b4011ddc880fc6e999d625863ca",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0006,
+    "multiplier": 1.96,
+    "profit": -0.0006,
+    "result": "loss",
+    "timestamp": 1771221878835
+  },
+  {
+    "id": "0xe17218450fcce82b474f1f47a65b6c1c",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0147,
+    "multiplier": 1.96,
+    "profit": -0.0147,
+    "result": "loss",
+    "timestamp": 1771221878836
+  },
+  {
+    "id": "0xb62c277b877fcfb7cbee1b4d0074bbf1",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0147,
+    "multiplier": 1.96,
+    "profit": -0.0147,
+    "result": "loss",
+    "timestamp": 1771221878841
+  },
+  {
+    "id": "0x56bc068536474612b507be8e4c57fa72",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.033,
+    "multiplier": 1.96,
+    "profit": -0.033,
+    "result": "loss",
+    "timestamp": 1771221878842
+  },
+  {
+    "id": "0xbe103011ffa1689070de94de11107f60",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0127,
+    "multiplier": 1.96,
+    "profit": -0.0127,
+    "result": "loss",
+    "timestamp": 1771221878842
+  },
+  {
+    "id": "0x775ebc278fa0d59501ff4c0e9f208011",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0209,
+    "multiplier": 1,
+    "profit": -0.0209,
+    "result": "loss",
+    "timestamp": 1771221904717
+  },
+  {
+    "id": "0x620eb6bf6951a5e3d5f977645fc0ffb8",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0035,
+    "multiplier": 1,
+    "profit": -0.0035,
+    "result": "loss",
+    "timestamp": 1771221904718
+  },
+  {
+    "id": "0x70a0e95305576071f6acdf57db2f7cf9",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0453,
+    "multiplier": 1,
+    "profit": -0.0453,
+    "result": "loss",
+    "timestamp": 1771221904719
+  },
+  {
+    "id": "0x6056382750f4c13740ecf7debb3816cd",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0077,
+    "multiplier": 1,
+    "profit": -0.0077,
+    "result": "loss",
+    "timestamp": 1771221904720
+  },
+  {
+    "id": "0x0c335d439e557674585dcd1d9395c0e0",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0168,
+    "multiplier": 1.25,
+    "profit": -0.0168,
+    "result": "loss",
+    "timestamp": 1771221927163
+  },
+  {
+    "id": "0xe58170ddff90fe88a41ba8079c0619ff",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.005,
+    "multiplier": 1.25,
+    "profit": -0.005,
+    "result": "loss",
+    "timestamp": 1771221927164
+  },
+  {
+    "id": "0x19843f956d8f26028272eb35e5824d26",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0189,
+    "multiplier": 1.25,
+    "profit": -0.0189,
+    "result": "loss",
+    "timestamp": 1771221927164
+  },
+  {
+    "id": "0x0046cdab56e2388fbac235d7fce50fad",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.021,
+    "multiplier": 1.25,
+    "profit": -0.021,
+    "result": "loss",
+    "timestamp": 1771221927165
+  },
+  {
+    "id": "0x5e0469e8e831fab0c7db67012ceec544",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0272,
+    "multiplier": 1.8,
+    "profit": 0.021759999999999998,
+    "result": "win",
+    "timestamp": 1771221956760
+  },
+  {
+    "id": "0x3280d6a3a619686bc81a30c736b83dfd",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0068,
+    "multiplier": 1.94,
+    "profit": 0.006391999999999999,
+    "result": "win",
+    "timestamp": 1771221957897
+  },
+  {
+    "id": "0xeeb851a60535038c3476444e0824c6ff",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0341,
+    "multiplier": 2.1,
+    "profit": 0.037509999999999995,
+    "result": "win",
+    "timestamp": 1771221959044
+  },
+  {
+    "id": "0x2c55053116885f0e61f884ea00fa2491",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0102,
+    "multiplier": 7.27,
+    "profit": -0.0102,
+    "result": "loss",
+    "timestamp": 1771221982209
+  },
+  {
+    "id": "0xa2604b68db16380c19bd47eb08d30c60",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0356,
+    "multiplier": 7.27,
+    "profit": -0.0356,
+    "result": "loss",
+    "timestamp": 1771221982210
+  },
+  {
+    "id": "0x795dad5afddf577db1b6306964014ec9",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.029,
+    "multiplier": 7.27,
+    "profit": -0.029,
+    "result": "loss",
+    "timestamp": 1771221982211
+  },
+  {
+    "id": "0xb98f600ef58f352eb6871add49453d81",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0146,
+    "multiplier": 1,
+    "profit": -0.0146,
+    "result": "loss",
+    "timestamp": 1771222001167
+  },
+  {
+    "id": "0x6535e72fb93967ff9c0bcf85833c43c8",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0474,
+    "multiplier": 1,
+    "profit": -0.0474,
+    "result": "loss",
+    "timestamp": 1771222001168
+  },
+  {
+    "id": "0x98aa68baaac80bf65efe9cba298a8541",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.051,
+    "multiplier": 1,
+    "profit": -0.051,
+    "result": "loss",
+    "timestamp": 1771222001169
+  },
+  {
+    "id": "0x7cb7f1cafdbfc1a498620ea524dc1c26",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0366,
+    "multiplier": 1,
+    "profit": -0.0366,
+    "result": "loss",
+    "timestamp": 1771222001169
+  },
+  {
+    "id": "0x0f743b85c8c9146df16724e17603bc80",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0437,
+    "multiplier": 1.18,
+    "profit": -0.0437,
+    "result": "loss",
+    "timestamp": 1771222030115
+  },
+  {
+    "id": "0xfb567e7576017ad7146abc14eec814c7",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0061,
+    "multiplier": 1.18,
+    "profit": -0.0061,
+    "result": "loss",
+    "timestamp": 1771222030115
+  },
+  {
+    "id": "0x16c3ca37688c85824f4d540089f0faea",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0112,
+    "multiplier": 1.18,
+    "profit": -0.0112,
+    "result": "loss",
+    "timestamp": 1771222030116
+  },
+  {
+    "id": "0x0eb1b0d39ae476d22610ca613de5f1c9",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0047,
+    "multiplier": 1.18,
+    "profit": -0.0047,
+    "result": "loss",
+    "timestamp": 1771222030116
+  },
+  {
+    "id": "0x39485278b2b4c9eea6532d38672876e7",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0062,
+    "multiplier": 1.18,
+    "profit": -0.0062,
+    "result": "loss",
+    "timestamp": 1771222030117
+  },
+  {
+    "id": "0x91850341c7878a3621b6b3bc9337a60c",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0059,
+    "multiplier": 1.18,
+    "profit": -0.0059,
+    "result": "loss",
+    "timestamp": 1771222030117
+  },
+  {
+    "id": "0x93ce7f2b114a541362c99a4f3fa9031f",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0324,
+    "multiplier": 1.49,
+    "profit": 0.015876,
+    "result": "win",
+    "timestamp": 1771222054041
+  },
+  {
+    "id": "0x437b47a6042885afd5d6dece22c2d753",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0128,
+    "multiplier": 1.56,
+    "profit": -0.0128,
+    "result": "loss",
+    "timestamp": 1771222057872
+  },
+  {
+    "id": "0x890905e6419d704dee7843ad40589ee5",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0202,
+    "multiplier": 1.56,
+    "profit": -0.0202,
+    "result": "loss",
+    "timestamp": 1771222057873
+  },
+  {
+    "id": "0x45387d3379b63473ef25bf70c592de2f",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0347,
+    "multiplier": 1.56,
+    "profit": -0.0347,
+    "result": "loss",
+    "timestamp": 1771222057873
+  },
+  {
+    "id": "0x40c06c663b20a3275454037f38cec34d",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.013,
+    "multiplier": 1.56,
+    "profit": -0.013,
+    "result": "loss",
+    "timestamp": 1771222057874
+  },
+  {
+    "id": "0xeeea2d50ccaca689ee6d59f3c9d6cf64",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0257,
+    "multiplier": 1.56,
+    "profit": -0.0257,
+    "result": "loss",
+    "timestamp": 1771222057874
+  },
+  {
+    "id": "0x2c2dd2c8a964bf4164f39e3ef4bf4b29",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0297,
+    "multiplier": 1.48,
+    "profit": -0.0297,
+    "result": "loss",
+    "timestamp": 1771222082565
+  },
+  {
+    "id": "0x51ce545e0ab2c96ed9e6978c7553390e",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0378,
+    "multiplier": 1.48,
+    "profit": -0.0378,
+    "result": "loss",
+    "timestamp": 1771222082566
+  },
+  {
+    "id": "0xe4bb4a0d3280445f2c7e9033e12480ff",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0122,
+    "multiplier": 1.48,
+    "profit": -0.0122,
+    "result": "loss",
+    "timestamp": 1771222082567
+  },
+  {
+    "id": "0x3bcb469ad44cbeb8bbf761a37ed6d88a",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0125,
+    "multiplier": 1.48,
+    "profit": -0.0125,
+    "result": "loss",
+    "timestamp": 1771222082567
+  },
+  {
+    "id": "0x4575b0632584d31a3e03b29e89eb2d48",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0354,
+    "multiplier": 1.48,
+    "profit": -0.0354,
+    "result": "loss",
+    "timestamp": 1771222082568
+  },
+  {
+    "id": "0xa9b595b60141a3992a38e52d687e876c",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0349,
+    "multiplier": 1.48,
+    "profit": -0.0349,
+    "result": "loss",
+    "timestamp": 1771222082568
+  },
+  {
+    "id": "0x699c3edac6dd8f807a58c72397053665",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0508,
+    "multiplier": 2.63,
+    "profit": 0.082804,
+    "result": "win",
+    "timestamp": 1771222113620
+  },
+  {
+    "id": "0x77506af8653ddd99b26a44a3ae4aa96b",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0377,
+    "multiplier": 26.75,
+    "profit": -0.0377,
+    "result": "loss",
+    "timestamp": 1771222151022
+  },
+  {
+    "id": "0x6a8f2e9bdcaf318c054959838120187d",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0076,
+    "multiplier": 26.75,
+    "profit": -0.0076,
+    "result": "loss",
+    "timestamp": 1771222151023
+  },
+  {
+    "id": "0x4ac5013ee6e2e2cac6899c9423e3aee0",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0227,
+    "multiplier": 2.22,
+    "profit": 0.027694000000000007,
+    "result": "win",
+    "timestamp": 1771222179494
+  },
+  {
+    "id": "0x6f245be34b17c7578825abfb57219637",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0068,
+    "multiplier": 2.37,
+    "profit": 0.009315999999999998,
+    "result": "win",
+    "timestamp": 1771222180460
+  },
+  {
+    "id": "0xd0318ea1bb70e8a2f1c5db2fca3dcabe",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0276,
+    "multiplier": 4.04,
+    "profit": -0.0276,
+    "result": "loss",
+    "timestamp": 1771222190670
+  },
+  {
+    "id": "0xda8bd868dfe593dffb06143fbf9b5c05",
+    "address": "0x075da9f0db9a4befaa09366fe7646f2c1c1a07a3",
+    "amount": 0.01,
+    "multiplier": 1.1,
+    "profit": 0.0010000000000000009,
+    "result": "win",
+    "timestamp": 1771222207453
+  },
+  {
+    "id": "0x2c9a2b83ebdeb15594e348b38a26a2b8",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.037,
+    "multiplier": 1.96,
+    "profit": -0.037,
+    "result": "loss",
+    "timestamp": 1771222219232
+  },
+  {
+    "id": "0x138b32b99e3b41857335e3c7e58b4f8a",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0254,
+    "multiplier": 1.96,
+    "profit": -0.0254,
+    "result": "loss",
+    "timestamp": 1771222219233
+  },
+  {
+    "id": "0xdbbd05416a61251cc2bbcedf78f410af",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0069,
+    "multiplier": 1.96,
+    "profit": -0.0069,
+    "result": "loss",
+    "timestamp": 1771222219235
+  },
+  {
+    "id": "0xe45a7247b7b4cbf590e223fc5cb8ed03",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0195,
+    "multiplier": 1.96,
+    "profit": -0.0195,
+    "result": "loss",
+    "timestamp": 1771222219235
+  },
+  {
+    "id": "0x840ad234f43ca4c70c49d656158bcb47",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0268,
+    "multiplier": 1.96,
+    "profit": -0.0268,
+    "result": "loss",
+    "timestamp": 1771222219236
+  },
+  {
+    "id": "0xd530ef8d47e058e25e8e48013fe804cc",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0131,
+    "multiplier": 1.13,
+    "profit": 0.001702999999999998,
+    "result": "win",
+    "timestamp": 1771222237032
+  },
+  {
+    "id": "0xd405371b2eae061fafaa24b9c28488e7",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0009,
+    "multiplier": 1.41,
+    "profit": -0.0009,
+    "result": "loss",
+    "timestamp": 1771222244202
+  },
+  {
+    "id": "0x030f3f56ac10741c44692257489ecbac",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0083,
+    "multiplier": 1.41,
+    "profit": -0.0083,
+    "result": "loss",
+    "timestamp": 1771222244202
+  },
+  {
+    "id": "0xfc84774ef2b34a8c20f8ce651e19610b",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0115,
+    "multiplier": 1.41,
+    "profit": -0.0115,
+    "result": "loss",
+    "timestamp": 1771222244203
+  },
+  {
+    "id": "0xbc71e35eec7ab950a06d7b78648c1fa6",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0337,
+    "multiplier": 1.41,
+    "profit": -0.0337,
+    "result": "loss",
+    "timestamp": 1771222244204
+  },
+  {
+    "id": "0x5f620be6a1b2beecd73f7df5b5cdadb1",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0116,
+    "multiplier": 1.41,
+    "profit": -0.0116,
+    "result": "loss",
+    "timestamp": 1771222244205
+  },
+  {
+    "id": "0xf9b7fbb071d81ca9fd93b39b9c0fb571",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.001,
+    "multiplier": 1.08,
+    "profit": -0.001,
+    "result": "loss",
+    "timestamp": 1771222264719
+  },
+  {
+    "id": "0x369b32f40014345de03bd63f75219ad5",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0424,
+    "multiplier": 1.08,
+    "profit": -0.0424,
+    "result": "loss",
+    "timestamp": 1771222264720
+  },
+  {
+    "id": "0x2ed594c0f59f5f19e2cc8c99be1693e5",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0481,
+    "multiplier": 1.08,
+    "profit": -0.0481,
+    "result": "loss",
+    "timestamp": 1771222264721
+  },
+  {
+    "id": "0xb829fa979caadb6e32967a8f45107882",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0448,
+    "multiplier": 1.08,
+    "profit": -0.0448,
+    "result": "loss",
+    "timestamp": 1771222264721
+  },
+  {
+    "id": "0xd5d19cd6b8b65eff0d6d70eec88aefe6",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0135,
+    "multiplier": 1.08,
+    "profit": -0.0135,
+    "result": "loss",
+    "timestamp": 1771222264721
+  },
+  {
+    "id": "0xdba2309386938f78285f4d423a9a305a",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.008,
+    "multiplier": 1.08,
+    "profit": -0.008,
+    "result": "loss",
+    "timestamp": 1771222264722
+  },
+  {
+    "id": "0x78406cb3dbee97c84e48374bfeea46ac",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0055,
+    "multiplier": 1.58,
+    "profit": -0.0055,
+    "result": "loss",
+    "timestamp": 1771222291312
+  },
+  {
+    "id": "0x0aa9d9401e7ff38687a3e0f853d8502a",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0139,
+    "multiplier": 1.58,
+    "profit": -0.0139,
+    "result": "loss",
+    "timestamp": 1771222291313
+  },
+  {
+    "id": "0xde6818525d2fc23f2c683318812b5590",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0162,
+    "multiplier": 1.58,
+    "profit": -0.0162,
+    "result": "loss",
+    "timestamp": 1771222291313
+  },
+  {
+    "id": "0xf0b83c9da002eb9f8cff39d0852d6b83",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0431,
+    "multiplier": 1.58,
+    "profit": -0.0431,
+    "result": "loss",
+    "timestamp": 1771222291314
+  },
+  {
+    "id": "0xebc811e839fbc192076c43c60c65566d",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0467,
+    "multiplier": 1.25,
+    "profit": 0.011674999999999998,
+    "result": "win",
+    "timestamp": 1771222313404
+  },
+  {
+    "id": "0x82ea13b156d7a4a1a0385af9829e6c7a",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0116,
+    "multiplier": 1.76,
+    "profit": -0.0116,
+    "result": "loss",
+    "timestamp": 1771222322136
+  },
+  {
+    "id": "0x177e3cb0fd1ff74ee2f68fd178ff5d0d",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0482,
+    "multiplier": 1.76,
+    "profit": -0.0482,
+    "result": "loss",
+    "timestamp": 1771222322138
+  },
+  {
+    "id": "0xd7122b462ec3757189aafa872f49d134",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0026,
+    "multiplier": 1.76,
+    "profit": -0.0026,
+    "result": "loss",
+    "timestamp": 1771222322138
+  },
+  {
+    "id": "0x9a8e48f4bb56688e956152727293c51f",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.022,
+    "multiplier": 1.76,
+    "profit": -0.022,
+    "result": "loss",
+    "timestamp": 1771222322139
+  },
+  {
+    "id": "0x7668843c34d78b603a6781aac01a8601",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0152,
+    "multiplier": 1.3,
+    "profit": -0.0152,
+    "result": "loss",
+    "timestamp": 1771222347241
+  },
+  {
+    "id": "0x620efc6d516ddbd839692e427d5a20b5",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0484,
+    "multiplier": 1.3,
+    "profit": -0.0484,
+    "result": "loss",
+    "timestamp": 1771222347241
+  },
+  {
+    "id": "0xfc74a51f9ae5bf9b3e9a1117fea1f85b",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0352,
+    "multiplier": 1.3,
+    "profit": -0.0352,
+    "result": "loss",
+    "timestamp": 1771222347242
+  },
+  {
+    "id": "0xedf739519eb559e8a2fd8eaf14a1eb85",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0491,
+    "multiplier": 1.3,
+    "profit": -0.0491,
+    "result": "loss",
+    "timestamp": 1771222347242
+  },
+  {
+    "id": "0xcdea1f2b4213a661044a6cdbb74fbca5",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0187,
+    "multiplier": 1.3,
+    "profit": -0.0187,
+    "result": "loss",
+    "timestamp": 1771222347243
+  },
+  {
+    "id": "0xdea7235309c77afb3b6430f78246b7a2",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0146,
+    "multiplier": 1.3,
+    "profit": -0.0146,
+    "result": "loss",
+    "timestamp": 1771222347244
+  },
+  {
+    "id": "0xfe8f0bb20839d0ca67db29bbc4c49710",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0187,
+    "multiplier": 1.68,
+    "profit": -0.0187,
+    "result": "loss",
+    "timestamp": 1771222371550
+  },
+  {
+    "id": "0x77e2d1733282ec8196e1e9a2acb75252",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0056,
+    "multiplier": 1.68,
+    "profit": -0.0056,
+    "result": "loss",
+    "timestamp": 1771222371552
+  },
+  {
+    "id": "0x30168a1a8ddb8bd3ee60956d15a26b07",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0072,
+    "multiplier": 1.68,
+    "profit": -0.0072,
+    "result": "loss",
+    "timestamp": 1771222371553
+  },
+  {
+    "id": "0xc98120c2ec4b3fadc7d5514dfb90f140",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0007,
+    "multiplier": 1.68,
+    "profit": -0.0007,
+    "result": "loss",
+    "timestamp": 1771222371554
+  },
+  {
+    "id": "0x559c643ef378f8cfad0f01e96179c289",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0429,
+    "multiplier": 1.56,
+    "profit": -0.0429,
+    "result": "loss",
+    "timestamp": 1771222397498
+  },
+  {
+    "id": "0xbea18c5ee7338d79fdd80eadc93dbe4f",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0296,
+    "multiplier": 1.56,
+    "profit": -0.0296,
+    "result": "loss",
+    "timestamp": 1771222397500
+  },
+  {
+    "id": "0xcb64609a9d0308ab02179c4cb112480e",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0426,
+    "multiplier": 1.56,
+    "profit": -0.0426,
+    "result": "loss",
+    "timestamp": 1771222397501
+  },
+  {
+    "id": "0x2db5af1c0a7f19f96f98cd1352238df3",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0447,
+    "multiplier": 1.56,
+    "profit": -0.0447,
+    "result": "loss",
+    "timestamp": 1771222397502
+  },
+  {
+    "id": "0x34e70653f16eb61f0f7ab0455557eb52",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0424,
+    "multiplier": 1.56,
+    "profit": -0.0424,
+    "result": "loss",
+    "timestamp": 1771222397503
+  },
+  {
+    "id": "0x170e232d94340b41631ba5b5d8feb415",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0245,
+    "multiplier": 1.12,
+    "profit": 0.0029400000000000016,
+    "result": "win",
+    "timestamp": 1771222416060
+  },
+  {
+    "id": "0x8cf23059fab67e8c0e013c68a676a87c",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0365,
+    "multiplier": 1.27,
+    "profit": 0.009855000000000003,
+    "result": "win",
+    "timestamp": 1771222417902
+  },
+  {
+    "id": "0x562418e4fcf9345bf32c0c684b885ed5",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0207,
+    "multiplier": 1.34,
+    "profit": 0.007038000000000003,
+    "result": "win",
+    "timestamp": 1771222418666
+  },
+  {
+    "id": "0xf621a7718d47aba86d4113e9a72bb1b7",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0399,
+    "multiplier": 1.66,
+    "profit": -0.0399,
+    "result": "loss",
+    "timestamp": 1771222424787
+  },
+  {
+    "id": "0x797be61f019ebfc9935f4e748573c4ff",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.006,
+    "multiplier": 1.66,
+    "profit": -0.006,
+    "result": "loss",
+    "timestamp": 1771222424788
+  },
+  {
+    "id": "0x06b160d340740548daa03219f2757a95",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0243,
+    "multiplier": 1.66,
+    "profit": -0.0243,
+    "result": "loss",
+    "timestamp": 1771222424788
+  },
+  {
+    "id": "0x6ab062085504d8e572cccf3d8b0f25ca",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0378,
+    "multiplier": 1.66,
+    "profit": -0.0378,
+    "result": "loss",
+    "timestamp": 1771222424789
+  },
+  {
+    "id": "0x4728a553e1563dc9c3083cf4c9009494",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0377,
+    "multiplier": 1.34,
+    "profit": 0.012818000000000003,
+    "result": "win",
+    "timestamp": 1771222444210
+  },
+  {
+    "id": "0xecaf1ee5548b243ebe094fdc1d04a844",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0195,
+    "multiplier": 1.35,
+    "profit": -0.0195,
+    "result": "loss",
+    "timestamp": 1771222448847
+  },
+  {
+    "id": "0xca3f718c8e0f530eaf97db215e66611e",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0131,
+    "multiplier": 1.35,
+    "profit": -0.0131,
+    "result": "loss",
+    "timestamp": 1771222448848
+  },
+  {
+    "id": "0x0c3d1094d244944fcb857c8789ec9e7c",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0238,
+    "multiplier": 1.35,
+    "profit": -0.0238,
+    "result": "loss",
+    "timestamp": 1771222448849
+  },
+  {
+    "id": "0x0479b8f4792687a68901582dacc5298e",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0107,
+    "multiplier": 1.35,
+    "profit": -0.0107,
+    "result": "loss",
+    "timestamp": 1771222448849
+  },
+  {
+    "id": "0xed30fa864e8b2373a894addff94046fd",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0296,
+    "multiplier": 1,
+    "profit": -0.0296,
+    "result": "loss",
+    "timestamp": 1771222469708
+  },
+  {
+    "id": "0x775b9ebc110994acf007c7de638908b9",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0195,
+    "multiplier": 1,
+    "profit": -0.0195,
+    "result": "loss",
+    "timestamp": 1771222469710
+  },
+  {
+    "id": "0x5285d1d12518a922dd025d52d0247c46",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0133,
+    "multiplier": 1,
+    "profit": -0.0133,
+    "result": "loss",
+    "timestamp": 1771222469711
+  },
+  {
+    "id": "0x4d2421e8fae6d8a7e8c6a9645cdf8b91",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.033,
+    "multiplier": 1,
+    "profit": -0.033,
+    "result": "loss",
+    "timestamp": 1771222469713
+  },
+  {
+    "id": "0xc9bb553efec0d38153aefa3e41bbba7b",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0367,
+    "multiplier": 1,
+    "profit": -0.0367,
+    "result": "loss",
+    "timestamp": 1771222469714
+  },
+  {
+    "id": "0xea6f39dacb425ca598eeebe4999a54be",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0389,
+    "multiplier": 1,
+    "profit": -0.0389,
+    "result": "loss",
+    "timestamp": 1771222469715
+  },
+  {
+    "id": "0xa946ffb079407e493d316bb99952d996",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0007,
+    "multiplier": 1,
+    "profit": -0.0007,
+    "result": "loss",
+    "timestamp": 1771222469716
+  },
+  {
+    "id": "0x7da436c44858d84dfc4fbbb407081c30",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0167,
+    "multiplier": 1.29,
+    "profit": -0.0167,
+    "result": "loss",
+    "timestamp": 1771222493592
+  },
+  {
+    "id": "0x0e274f276e6e17c0300a8d0e3ba75e05",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0223,
+    "multiplier": 1.29,
+    "profit": -0.0223,
+    "result": "loss",
+    "timestamp": 1771222493593
+  },
+  {
+    "id": "0x5a0ce430633835d76b7024b4ba142d5f",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0158,
+    "multiplier": 1.29,
+    "profit": -0.0158,
+    "result": "loss",
+    "timestamp": 1771222493594
+  },
+  {
+    "id": "0x580230c2fb377aec2eda54000c7044b3",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.029,
+    "multiplier": 1.29,
+    "profit": -0.029,
+    "result": "loss",
+    "timestamp": 1771222493594
+  },
+  {
+    "id": "0xc6a04da12e65eb17d70792a47b2eeba4",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0507,
+    "multiplier": 1.06,
+    "profit": -0.0507,
+    "result": "loss",
+    "timestamp": 1771222517445
+  },
+  {
+    "id": "0xb4adc4438fcf4e3ef5ce5d90ada60da9",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0395,
+    "multiplier": 1.06,
+    "profit": -0.0395,
+    "result": "loss",
+    "timestamp": 1771222517446
+  },
+  {
+    "id": "0x1481b464f0b8b3ae28f6cabc2b317417",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0347,
+    "multiplier": 1.06,
+    "profit": -0.0347,
+    "result": "loss",
+    "timestamp": 1771222517448
+  },
+  {
+    "id": "0x6f9a7c2ab605f3bf0461a18e8e343782",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0427,
+    "multiplier": 1.06,
+    "profit": -0.0427,
+    "result": "loss",
+    "timestamp": 1771222517449
+  },
+  {
+    "id": "0x9cc6983a8b7422ad5261c2b33e5b2152",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0188,
+    "multiplier": 1.06,
+    "profit": -0.0188,
+    "result": "loss",
+    "timestamp": 1771222517449
+  },
+  {
+    "id": "0x78ac21103c6ed806fac4b22b9e77527c",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.018,
+    "multiplier": 1.06,
+    "profit": -0.018,
+    "result": "loss",
+    "timestamp": 1771222517450
+  },
+  {
+    "id": "0x71503c58c6d94af880f3961f48986c30",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0247,
+    "multiplier": 1.06,
+    "profit": -0.0247,
+    "result": "loss",
+    "timestamp": 1771222517451
+  },
+  {
+    "id": "0x275c45f33e54032af43a5af305928f80",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0392,
+    "multiplier": 1.28,
+    "profit": -0.0392,
+    "result": "loss",
+    "timestamp": 1771222543291
+  },
+  {
+    "id": "0x22bbb47873176e4be449031f07ebf430",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0075,
+    "multiplier": 1.28,
+    "profit": -0.0075,
+    "result": "loss",
+    "timestamp": 1771222543292
+  },
+  {
+    "id": "0x9900a5ce8e1bbd52e83aa87b2bab4355",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0485,
+    "multiplier": 1.28,
+    "profit": -0.0485,
+    "result": "loss",
+    "timestamp": 1771222543292
+  },
+  {
+    "id": "0x525ac0061288869f7fa39b869f8807eb",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.021,
+    "multiplier": 1.28,
+    "profit": -0.021,
+    "result": "loss",
+    "timestamp": 1771222543293
+  },
+  {
+    "id": "0x35c812785e6baeaef08305be7b09ee32",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.038,
+    "multiplier": 1.28,
+    "profit": -0.038,
+    "result": "loss",
+    "timestamp": 1771222543293
+  },
+  {
+    "id": "0x1ccc82cf3b7cd924b2e00fa9a3966032",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0259,
+    "multiplier": 1.45,
+    "profit": -0.0259,
+    "result": "loss",
+    "timestamp": 1771222569151
+  },
+  {
+    "id": "0x8e4ac4b477f1c867b16aca1cb7f8882d",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0416,
+    "multiplier": 1.45,
+    "profit": -0.0416,
+    "result": "loss",
+    "timestamp": 1771222569152
+  },
+  {
+    "id": "0x7ceda1ec24b42c52d4e47060aac3af35",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.043,
+    "multiplier": 1.45,
+    "profit": -0.043,
+    "result": "loss",
+    "timestamp": 1771222569152
+  },
+  {
+    "id": "0xb537dd1cf7fc25c2fe8fc9ad2b3601a8",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0474,
+    "multiplier": 1.45,
+    "profit": -0.0474,
+    "result": "loss",
+    "timestamp": 1771222569153
+  },
+  {
+    "id": "0xdc745f62528995f6b30b1a40d8f6465b",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.001,
+    "multiplier": 1.45,
+    "profit": -0.001,
+    "result": "loss",
+    "timestamp": 1771222569153
+  },
+  {
+    "id": "0x1cae0e870d72dd339ecddeea33113c1d",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0411,
+    "multiplier": 1.45,
+    "profit": -0.0411,
+    "result": "loss",
+    "timestamp": 1771222569154
+  },
+  {
+    "id": "0xb268cf0807df262a9fb22495a688c16a",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0293,
+    "multiplier": 1.15,
+    "profit": 0.004394999999999996,
+    "result": "win",
+    "timestamp": 1771222587326
+  },
+  {
+    "id": "0x8f10db3eb0cafa913c80613e530e43ef",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0259,
+    "multiplier": 1.31,
+    "profit": 0.008029000000000001,
+    "result": "win",
+    "timestamp": 1771222589245
+  },
+  {
+    "id": "0x214dd3746a355f451230b6f6814ce2ba",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0127,
+    "multiplier": 1.89,
+    "profit": 0.011302999999999997,
+    "result": "win",
+    "timestamp": 1771222594639
+  },
+  {
+    "id": "0x8e3f43758d3adb373e5e1aac25515221",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0285,
+    "multiplier": 2.12,
+    "profit": 0.031920000000000004,
+    "result": "win",
+    "timestamp": 1771222596374
+  },
+  {
+    "id": "0xeb66f982786c72c33615f68eff64bb6b",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0367,
+    "multiplier": 3.11,
+    "profit": 0.077437,
+    "result": "win",
+    "timestamp": 1771222602026
+  },
+  {
+    "id": "0xba2f9e885325a394f0de489a101e4cb5",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0333,
+    "multiplier": 3.14,
+    "profit": 0.07126200000000002,
+    "result": "win",
+    "timestamp": 1771222602140
+  },
+  {
+    "id": "0xfc2ebfd77be1440c9a077ea668eccf52",
+    "address": "0x0000000000000000000000000000000000000000",
+    "amount": 0.0184,
+    "multiplier": 3.89,
+    "profit": -0.0184,
+    "result": "loss",
+    "timestamp": 1771222609770
+  },
+  {
+    "id": "0x1767ef247db574842bd0a5d24eeec3a1",
+    "address": "0x075da9f0db9a4befaa09366fe7646f2c1c1a07a3",
+    "amount": 0.01,
+    "multiplier": 1.96,
+    "profit": -0.01,
+    "result": "loss",
+    "timestamp": 1771223422151
+  },
+  {
+    "id": "0xe9233522e86d88a382c07a3da360665d",
+    "address": "0x075da9f0db9a4befaa09366fe7646f2c1c1a07a3",
+    "amount": 0.01,
+    "multiplier": 2,
+    "profit": 0.01,
+    "result": "win",
+    "timestamp": 1771223508343
+  },
+  {
+    "id": "0xeaf69de7f5b093a7e6ced169cfc9acc3",
+    "address": "0x075da9f0db9a4befaa09366fe7646f2c1c1a07a3",
+    "amount": 0.01,
+    "multiplier": 1.1,
+    "profit": 0.0010000000000000009,
+    "result": "win",
+    "timestamp": 1771223694846
+  }
+]

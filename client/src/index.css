@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#101622] text-white;
+  }
+}
+
+.glass-panel {
+  background: rgba(40, 46, 57, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.multiplier-text {
+  text-shadow: 0 0 20px rgba(37, 106, 244, 0.5);
+}
+
+.grid-bg {
+  background-image: linear-gradient(rgba(37, 106, 244, 0.05) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(37, 106, 244, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.custom-scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.custom-scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

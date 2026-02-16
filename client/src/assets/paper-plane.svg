@@ -1,0 +1,18 @@
+<svg width="140" height="140" viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="planeBody" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#cbd5e1"/>
+    </linearGradient>
+    <linearGradient id="planeAccent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#9aa4b2"/>
+      <stop offset="100%" stop-color="#64748b"/>
+    </linearGradient>
+  </defs>
+  <g transform="rotate(-25 70 70)">
+    <polygon points="20,70 118,70 70,88" fill="url(#planeBody)"/>
+    <polygon points="20,70 78,58 70,88" fill="url(#planeAccent)"/>
+    <polygon points="68,62 118,70 84,74" fill="#e2e8f0"/>
+    <circle cx="88" cy="70" r="6" fill="#0b1220" opacity="0.6"/>
+  </g>
+</svg>

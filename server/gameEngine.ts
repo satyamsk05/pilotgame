@@ -10,6 +10,8 @@ const CONTRACT_ADDRESSES = {
     WithdrawalPortal: "0xcf4A07b24aAef8a513eA2794309083D6e3AB6427"
 };
 
+const DEPLOYMENT_BLOCK = 37650298; // Base Sepolia block when vault was deployed
+
 const ABIS = {
     DepositVault: [
         "event Deposited(address indexed user, uint256 amount)",
@@ -193,49 +195,57 @@ export class GameEngine {
     private async syncMissedDeposits() {
         try {
             const currentBlock = await this.provider.getBlockNumber();
-            const startBlock = this.lastBlockProcessed > 0 ? this.lastBlockProcessed + 1 : currentBlock - 1000;
+            let startBlock = this.lastBlockProcessed > 0 ? this.lastBlockProcessed + 1 : DEPLOYMENT_BLOCK;
 
             if (startBlock > currentBlock) return;
 
-            console.log(`Syncing missed deposits from block ${startBlock} to ${currentBlock}...`);
+            const CHUNK_SIZE = 5000;
+            const targetBlock = currentBlock;
 
-            const filter = this.vaultContract.filters.Deposited();
-            const logs = await this.vaultContract.queryFilter(filter, startBlock, currentBlock);
+            while (startBlock <= targetBlock) {
+                const endBlock = Math.min(startBlock + CHUNK_SIZE - 1, targetBlock);
+                console.log(`Syncing missed events from block ${startBlock} to ${endBlock}...`);
 
-            let updated = false;
-            for (const log of logs) {
-                const event = this.vaultContract.interface.parseLog(log);
-                if (event) {
-                    const { user, amount } = event.args;
-                    const addr = user.toLowerCase();
-                    console.log(`Catch-up: ${user} deposited ${ethers.formatEther(amount)} ETH`);
+                // Sync Deposits
+                const filter = this.vaultContract.filters.Deposited();
+                const logs = await this.vaultContract.queryFilter(filter, startBlock, endBlock);
 
-                    const currentBalance = ethers.parseEther(this.balances[addr] || "0");
-                    const newBalance = currentBalance + amount;
-                    this.balances[addr] = ethers.formatEther(newBalance);
+                let updated = false;
+                for (const log of logs) {
+                    const event = this.vaultContract.interface.parseLog(log);
+                    if (event) {
+                        const { user, amount } = event.args;
+                        const addr = user.toLowerCase();
+                        console.log(`Catch-up: ${user} deposited ${ethers.formatEther(amount)} ETH`);
 
-                    this.recordTransaction(addr, 'deposit', ethers.formatEther(amount));
-                    updated = true;
+                        const currentBalance = ethers.parseEther(this.balances[addr] || "0");
+                        const newBalance = currentBalance + amount;
+                        this.balances[addr] = ethers.formatEther(newBalance);
+
+                        this.recordTransaction(addr, 'deposit', ethers.formatEther(amount));
+                        updated = true;
+                    }
                 }
-            }
 
-            // Also sync withdrawals
-            const withdrawFilter = this.vaultContract!.filters.FundsWithdrawn();
-            const withdrawLogs = await this.vaultContract!.queryFilter(withdrawFilter, startBlock, currentBlock);
-            for (const log of withdrawLogs) {
-                const event = this.vaultContract.interface.parseLog(log);
-                if (event) {
-                    const { user, amount } = event.args;
-                    this.recordTransaction(user.toLowerCase(), 'withdrawal', ethers.formatEther(amount));
+                // Sync Withdrawals
+                const withdrawFilter = this.vaultContract!.filters.FundsWithdrawn();
+                const withdrawLogs = await this.vaultContract!.queryFilter(withdrawFilter, startBlock, endBlock);
+                for (const log of withdrawLogs) {
+                    const event = this.vaultContract.interface.parseLog(log);
+                    if (event) {
+                        const { user, amount } = event.args;
+                        this.recordTransaction(user.toLowerCase(), 'withdrawal', ethers.formatEther(amount));
+                    }
                 }
-            }
 
-            if (updated) {
-                this.saveBalances();
-            }
+                if (updated) {
+                    this.saveBalances();
+                }
 
-            this.lastBlockProcessed = currentBlock;
-            this.saveServerState();
+                this.lastBlockProcessed = endBlock;
+                this.saveServerState();
+                startBlock = endBlock + 1;
+            }
         } catch (error) {
             console.error("Failed to sync missed events:", error);
         }
@@ -329,7 +339,8 @@ export class GameEngine {
     }
 
     private recordBetResult(address: string, amount: number, multiplier: number, profit: number, result: 'win' | 'loss') {
-        if (address === "0x0000000000000000000000000000000000000000") return;
+        // Only record history for real users with valid addresses
+        if (!address || address === ethers.ZeroAddress) return;
 
         const betResult = {
             id: ethers.hexlify(ethers.randomBytes(16)),
@@ -481,11 +492,13 @@ export class GameEngine {
                 const amountUsd = Math.random() * (this.MAX_BET_USD - this.MIN_BET_USD) + this.MIN_BET_USD;
                 const amountEth = amountUsd / this.ethPrice;
 
+                const randomWallet = `0x${Array.from({ length: 40 }, () => '0123456789abcdef'[Math.floor(Math.random() * 16)]).join('')}`;
+
                 const botBet: Bet = {
-                    userId: `bot_${name}_${Math.random().toString(36).substr(2, 5)}`,
+                    userId: `u_${Math.random().toString(36).substr(2, 9)}`,
                     username: name,
                     amount: parseFloat(amountEth.toFixed(4)),
-                    walletAddress: "0x0000000000000000000000000000000000000000",
+                    walletAddress: randomWallet,
                     isSimulated: true,
                     timestamp: Date.now()
                 };

@@ -55,21 +55,18 @@ export const LiveBets: React.FC<LiveBetsProps> = ({ bets, ethPrice, status }) =>
                                 ? 'bg-emerald-500/10 border-emerald-500/20 shadow-[0_0_15px_rgba(16,185,129,0.05)]'
                                 : status === 'crashed'
                                     ? 'bg-rose-500/5 border-rose-500/10 opacity-70'
-                                    : bet.isSimulated
-                                        ? 'bg-white/5 border-white/5 opacity-80'
-                                        : 'bg-primary/5 border-primary/20'
+                                    : 'bg-primary/5 border-primary/20'
                                 }`}
                         >
                             <div className="flex items-center gap-2.5">
-                                <div className={`p-1 rounded-lg ${bet.isSimulated ? 'bg-slate-800 text-slate-500' : 'bg-primary/20 text-primary'}`}>
+                                <div className="p-1 rounded-lg bg-primary/20 text-primary">
                                     <span className="material-symbols-outlined text-[12px]">
-                                        {bet.isSimulated ? 'precision_manufacturing' : 'person'}
+                                        person
                                     </span>
                                 </div>
                                 <div className="flex flex-col">
-                                    <span className={`text-[10px] font-black tracking-tight leading-none ${bet.isSimulated ? 'text-slate-400' : 'text-white'} flex items-center gap-1.5`}>
-                                        {bet.isSimulated ? bet.username : (bet.username || bet.walletAddress.slice(0, 6))}
-                                        {bet.isSimulated && <span className="text-[6px] opacity-20 font-bold uppercase tracking-widest px-1 py-0.5 border border-white/5 rounded">AI</span>}
+                                    <span className="text-[10px] font-black tracking-tight leading-none text-white flex items-center gap-1.5">
+                                        {(bet.username || bet.walletAddress.slice(0, 6))}
                                     </span>
                                     <div className="flex items-center gap-1.5 mt-1">
                                         <span className={`text-[10px] font-black uppercase tracking-widest leading-none ${(status === 'crashed' && !bet.cashOutMultiplier) ? 'text-rose-500/80 transition-colors' : 'text-emerald-500/80 transition-colors'

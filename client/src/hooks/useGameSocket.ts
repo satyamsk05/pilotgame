@@ -82,7 +82,8 @@ export const useGameSocket = (userAddress?: string) => {
 
         s.on('bet-placed', (data: any) => {
             setLiveBets(prev => [...prev, data]);
-            if (s.id === data.userId || (data.walletAddress && data.walletAddress === s.id)) { // Note: s.id might not be the same as userId if userId is address
+            const isMyBet = data.userId === s.id || (userAddress && data.walletAddress?.toLowerCase() === userAddress.toLowerCase());
+            if (isMyBet) {
                 setHasActiveBet(true);
                 setActiveBetAmount(data.amount);
             }

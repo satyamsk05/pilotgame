@@ -122,16 +122,15 @@ const App: React.FC = () => {
       return;
     }
 
-    if (parseFloat(gameBalance) < ethAmount) {
-      alert("Insufficient game balance. Please deposit ETH first.");
-      setIsDepositModalOpen(true);
-      return;
-    }
-
     if (status === 'waiting') {
       if (hasActiveBet) {
         cancelBet();
       } else {
+        if (parseFloat(gameBalance) < ethAmount) {
+          alert("Insufficient game balance. Please deposit ETH first.");
+          setIsDepositModalOpen(true);
+          return;
+        }
         const autoMulti = isAutoCashOut ? parseFloat(autoCashOutMultiplier) : undefined;
         placeBet(ethAmount, address!, autoMulti);
       }

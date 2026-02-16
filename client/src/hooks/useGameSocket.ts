@@ -1,7 +1,7 @@
 import { io, Socket } from 'socket.io-client';
 import { useState, useEffect, useCallback } from 'react';
 
-const SOCKET_URL = 'http://localhost:3001';
+const SOCKET_URL = 'https://pilotgame.onrender.com';
 
 export const useGameSocket = (userAddress?: string) => {
     const [socket, setSocket] = useState<Socket | null>(null);

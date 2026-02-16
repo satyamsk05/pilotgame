@@ -263,7 +263,7 @@ export class GameEngine {
         // Polling loop for events is more stable than contract.on with public RPCs
         setInterval(() => {
             this.syncMissedDeposits();
-        }, 30000); // Check every 30 seconds
+        }, 10000); // Check every 10 seconds
     }
 
     private loadServerState() {

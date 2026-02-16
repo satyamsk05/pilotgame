@@ -143,23 +143,23 @@ const App: React.FC = () => {
   };
 
   const handleDeposit = async () => {
-    if (!address || !(window as any).ethereum) return;
+    if (!address || !fundingAmount) return;
     try {
-      const walletClient = createWalletClient({
-        account: address as `0x${string}`,
-        chain: baseSepolia,
-        transport: custom((window as any).ethereum)
-      });
+      const amountToDeposit = parseFloat(fundingAmount);
+      if (isNaN(amountToDeposit) || amountToDeposit <= 0) {
+        alert("Please enter a valid deposit amount.");
+        return;
+      }
 
-      const hash = await walletClient.writeContract({
+      writeContract({
         address: VAULT_ADDRESS as `0x${string}`,
         abi: VAULT_ABI,
         functionName: 'deposit',
         value: viemParseEther(fundingAmount),
       });
 
-      console.log("Deposit hash:", hash);
-      requestBalance(address);
+      // No need to call requestBalance here immediately as backend polling will pick it up
+      // and emit balance-update which we already listen to.
       setFundingAmount("0.1");
     } catch (error) {
       console.error("Deposit failed:", error);

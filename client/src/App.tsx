@@ -142,12 +142,18 @@ const App: React.FC = () => {
     }
   };
 
+  const { writeContractAsync } = useWriteContract();
+
   const handleDeposit = async () => {
     if (!address || !fundingAmount) return;
 
     if (isWrongChain) {
-      switchChain({ chainId: baseSepolia.id });
-      return;
+      try {
+        await switchChain({ chainId: baseSepolia.id });
+      } catch (err) {
+        console.error("Failed to switch chain:", err);
+        return;
+      }
     }
 
     try {
@@ -157,7 +163,7 @@ const App: React.FC = () => {
         return;
       }
 
-      writeContract({
+      const hash = await writeContractAsync({
         address: VAULT_ADDRESS as `0x${string}`,
         abi: VAULT_ABI,
         functionName: 'deposit',
@@ -165,11 +171,15 @@ const App: React.FC = () => {
         chainId: baseSepolia.id,
       });
 
-      // No need to call requestBalance here immediately as backend polling will pick it up
-      // and emit balance-update which we already listen to.
+      console.log("Deposit submitted:", hash);
       setFundingAmount("0.1");
-    } catch (error) {
+    } catch (error: any) {
       console.error("Deposit failed:", error);
+      if (error?.message?.includes("User rejected")) {
+        // Silently handle rejection or show a subtle message
+      } else {
+        alert(`Deposit failed: ${error?.shortMessage || error?.message || "Unknown error"}`);
+      }
     }
   };
 
@@ -177,8 +187,12 @@ const App: React.FC = () => {
     if (!address || !fundingAmount) return;
 
     if (isWrongChain) {
-      switchChain({ chainId: baseSepolia.id });
-      return;
+      try {
+        await switchChain({ chainId: baseSepolia.id });
+      } catch (err) {
+        console.error("Failed to switch chain:", err);
+        return;
+      }
     }
 
     try {
@@ -193,16 +207,19 @@ const App: React.FC = () => {
         return;
       }
 
-      writeContract({
+      const hash = await writeContractAsync({
         address: PORTAL_ADDRESS as `0x${string}`,
         abi: PORTAL_ABI,
         functionName: 'withdraw',
         args: [viemParseEther(fundingAmount)],
         chainId: baseSepolia.id,
       });
+
+      console.log("Withdraw submitted:", hash);
       requestBalance(address);
-    } catch (error) {
+    } catch (error: any) {
       console.error("Withdraw failed:", error);
+      alert(`Withdraw failed: ${error?.shortMessage || error?.message || "Unknown error"}`);
     }
   };
 

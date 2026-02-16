@@ -3,7 +3,7 @@ import { useGameSocket } from './hooks/useGameSocket';
 import { GameCanvas } from './components/GameCanvas';
 import { LiveBets } from './components/LiveBets';
 import { useAccount, useConnect, useDisconnect, useWriteContract, useChainId, useSwitchChain } from 'wagmi';
-import { baseSepolia } from 'viem/chains';
+import { baseSepolia } from 'wagmi/chains';
 import { parseEther as viemParseEther, createWalletClient, custom } from 'viem';
 import { VAULT_ADDRESS, VAULT_ABI, PORTAL_ADDRESS, PORTAL_ABI } from './contract';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -152,8 +152,8 @@ const App: React.FC = () => {
         await switchChain({ chainId: baseSepolia.id });
       } catch (err) {
         console.error("Failed to switch chain:", err);
-        return;
       }
+      return; // Halting here to let the state update; user clicks again.
     }
 
     try {
@@ -191,8 +191,8 @@ const App: React.FC = () => {
         await switchChain({ chainId: baseSepolia.id });
       } catch (err) {
         console.error("Failed to switch chain:", err);
-        return;
       }
+      return;
     }
 
     try {

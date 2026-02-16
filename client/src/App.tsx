@@ -10,19 +10,17 @@ import { motion, AnimatePresence } from 'framer-motion';
 // No Settings import needed, using material-symbols
 
 const App: React.FC = () => {
-  const { address } = useAccount();
+  const { address, isConnected, chain } = useAccount();
   const {
     multiplier, status, history, nextRoundIn, gameBalance, transactions, betHistory,
     placeBet, cashOut, cancelBet, requestBalance, requestTransactions, requestBetHistory,
     hasActiveBet, activeBetAmount, ethPrice, liveBets
   } = useGameSocket(address);
-  const [betAmount, setBetAmount] = useState('0.1'); // Bet amount is now in ETH
+  const [betAmount, setBetAmount] = useState('0.1');
   const [isMuted, setIsMuted] = useState(false);
-  const { isConnected, connector } = useAccount();
   const { connect, connectors } = useConnect();
   const { disconnect } = useDisconnect();
   const { writeContract, isPending } = useWriteContract();
-  const chainId = useChainId();
   const { switchChain } = useSwitchChain();
   const [isDepositModalOpen, setIsDepositModalOpen] = useState(false);
   const [fundingAmount, setFundingAmount] = useState('0.1');
@@ -102,7 +100,7 @@ const App: React.FC = () => {
     }
   }, [isDepositModalOpen, address, requestTransactions]);
 
-  const isWrongChain = isConnected && chainId !== baseSepolia.id;
+  const isWrongChain = isConnected && chain?.id !== baseSepolia.id;
 
   const handleBet = async () => {
     if (!isConnected) {
